@@ -1,0 +1,23 @@
+@mixin button-card
+    background-color: black
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 326px
+    height: 56px
+    border-radius: 99px
+    cursor: pointer
+    color: white
+    font-weight: 700
+    font-size: 14px
+    &:hover
+        transform: scale(1.02)    
+    &:active
+        transform: scale(1.015)
+@mixin button-points
+    @include button-card
+    width: 180px
+    height: 36px
+    
+
+    

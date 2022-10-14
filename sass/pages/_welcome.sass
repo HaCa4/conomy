@@ -1,0 +1,49 @@
+@import "../components/_button"
+@import "../components/_card"
+@import "../components/_page"
+@import "../components/_typography"
+
+.welcome-page
+    @include page-yellow
+    height: 100vh
+    position: fixed
+    top: 0
+    z-index: 10
+
+.welcome-header
+    font-weight: 700
+    font-size: 32px
+    line-height: 39px
+    position: absolute
+    top:5vh
+.welcome-content
+    font-weight: 400
+    font-size: 14px
+    line-height: 17px
+    position: absolute
+    top: 10vh
+
+.welcome-image
+    max-width: 50vw
+    max-height: 50vh
+    position: absolute
+    top: 20vh
+
+.start-card
+    @include welcome-card
+    position: absolute
+    bottom: 2vh
+
+.start-card-title
+    @include card-title
+    
+.start-card-button
+    @include button-card
+
+@media screen and ( max-width:400px  )
+    .start-card
+        width: 80%
+    .start-card-button
+        width: 80%
+        height: 28px
+    

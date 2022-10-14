@@ -1,0 +1,42 @@
+@import "../components/_button"
+@import "../components/_card"
+@import "../components/_page"
+@import "../components/_typography"
+
+
+.notification-page
+    @include page-yellow
+
+.card-notification
+    @include notification-card
+    background-color: white 
+
+.notification-card-title
+    @include card-title
+
+.notification-card-content
+    @include card-content-big
+    
+.notification-card-button
+    @include button-card
+
+.congrats-image
+    @include notification-image
+
+.view-image
+    @include notification-image
+    width: 72px
+    height:72px
+.view-point
+    @include points-green
+
+@media screen and (max-width:400px)
+    .card-notification
+        width: 90%
+    .notification-card-title
+        font-size: 16px
+    .notification-card-content
+        font-size: 10px
+    .notification-card-button
+        width: 90%
+        height: 40px

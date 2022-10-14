@@ -1,0 +1,35 @@
+@import "../components/_button"
+
+.navbar
+    width: 100vw
+    height: 10vh
+    background: #FFCC33
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center 
+    box-sizing: border-box
+    padding: 0 5vw
+
+.navbar-logo
+    font-weight: 500
+    font-size: 24px
+    line-height: 68px
+    cursor: pointer
+
+.navbar-points-button
+    @include button-points
+
+@media screen and (max-width:400px) 
+    .navbar
+        justify-content: space-evenly
+    .navbar-logo
+        font-size: 16px
+        line-height: normal
+        font-weight: 700
+    .navbar-points-button
+        width: 140px
+        height: 26px
+        font-size: 12px
+
+	

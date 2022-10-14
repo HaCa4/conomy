@@ -1,0 +1,49 @@
+@mixin text-flow
+    overflow : hidden
+    text-overflow: ellipsis
+    display: -webkit-box
+    -webkit-line-clamp: 3
+    -webkit-box-orient: vertical
+    word-break: break-all
+
+@mixin card-title
+    @include text-flow
+    font-weight: 700
+    font-size: 20px
+    line-height: 28px
+    
+@mixin card-title-small
+    @include text-flow
+    font-weight: 700
+    font-size: 14px
+    line-height: 20px
+  
+@mixin card-content-big
+    @include text-flow
+    font-weight: 500
+    font-size: 14px
+    line-height: 20px
+@mixin card-content-small
+    @include text-flow
+    font-weight: 500
+    font-size: 12px
+    line-height: 16px
+    color: #999999
+  
+@mixin points-green
+    @include text-flow
+    font-weight: 700
+    font-size: 14px
+    line-height: 18px
+    text-align: right
+    color: #00CC00
+
+@mixin page-title
+    @include text-flow
+    width: 100%
+    font-weight: 700
+    font-size: 16px
+    line-height: 3rem
+    height: 3rem
+    text-align: left
+    padding: 0 12px

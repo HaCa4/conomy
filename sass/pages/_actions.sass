@@ -1,0 +1,52 @@
+@import "../components/_button"
+@import "../components/_card"
+@import "../components/_image"
+@import "../components/_page"
+@import "../components/_typography"
+
+.home-page
+    @include page
+
+.home-title
+    @include page-title
+
+.home-congrats
+    @include points-green
+    margin: 0.5rem 0
+
+.action-card
+    @include line-card
+    cursor: pointer
+
+.action-image
+    @include line-image
+
+.action-text-wrapper
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    align-items: flex-start
+    width: 85%
+    max-width: 85%
+    margin-left: 1rem 
+
+.action-title
+    @include card-title-small
+    text-align: left
+    
+.action-content
+    @include card-content-small
+    text-align: left
+    
+.action-points
+    @include points-green
+    min-width: 20% 
+@media screen and ( max-width:400px  )
+    .action-title
+        font-size: 10px
+    .action-content
+        font-size: 8px
+    .action-points
+        font-size: 10px
+    .home-title
+        font-size: 10px
