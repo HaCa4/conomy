@@ -43,7 +43,7 @@ const Home: NextPage<HomeProps> = ({ fetchedActions }: HomeProps) => {
 export default Home;
 
 export async function getStaticProps() {
-  const res = await axios("https://mocki.io/v1/88091a2f-18ab-4954-89e3-b6bbb041b4b0");
+  const res = await axios("https://cdn.mallconomy.com/testcase/actions.json ");
   const fetchedActions: SingleAction[] = res.data;
   return {
     props: { fetchedActions },
